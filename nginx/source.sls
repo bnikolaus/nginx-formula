@@ -179,6 +179,7 @@ nginx:
         --error-log-path={{ log_dir }}/error.log
         --pid-path={{ pid_path }}
         --lock-path={{ lock_path }}
+        --with-http_realip_module
         --http-client-body-temp-path={{ base_temp_dir }}/body
         --http-proxy-temp-path={{ base_temp_dir }}/proxy
         --http-fastcgi-temp-path={{ base_temp_dir }}/fastcgi
